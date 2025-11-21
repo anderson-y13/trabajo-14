@@ -1,0 +1,13 @@
+EJEMPLO 5 
+
+El usuario introduce una frase; luego, la frase se transforma en un array: frase = Console.ReadLine().ToCharArray().
+
+Se establecen contadores para cada vocal: cont_a = 0, cont_e = 0, cont_i = 0, cont_o = 0, cont_u = 0.
+
+Mediante un ciclo for, cada caracter se atraviesa: for (int i = 0; i < lim; i++). El bucle transita a través de cada posición del array frase.
+
+Cada carácter se convierte a mayúscula y se evalúa empleando un switch: switch (char.ToUpper(frase[i])). char.ToUpper() convierte el carácter en mayúscula, simplificando la evaluación.
+
+Usando un switch, se determina si es una vocal: case 'A': cont_a++; break;, etc. Si coincide, el contador correspondiente se aumenta.
+
+Finalmente, se muestran los contadores de cada vocal: Console.WriteLine(" Vocal a {0}", cont_a), y similar para cada vocal.

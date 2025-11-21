@@ -1,0 +1,22 @@
+﻿using System;
+namespace Ejemplo3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char[] c;
+            Console.Write("* Ingresa mensaje: ");
+            c = Console.ReadLine().ToCharArray();
+            Console.WriteLine();
+            Console.WriteLine("* Mensaje ingresado.");
+            Console.Write("c[{0}] = ", c.Length);
+            for (int i = 0; i < c.Length; i++)
+            {
+                Console.Write("[{0}]", c[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+

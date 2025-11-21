@@ -1,0 +1,17 @@
+EJEMPLO 6
+
+El usuario escribe un carácter: c = char.Parse(Console.ReadLine()).
+
+Se transforma a mayúscula y se obtiene su valor ASCII: ascii = (int)char.ToUpper(c).
+
+Si el valor ASCII está entre 48 y 57, se considera número:
+if (ascii >= 48 && ascii <= 57) { r = "es un numero"; }
+
+Si está entre 65 y 90, se clasifica como letra:
+else if (ascii >= 65 && ascii <= 90) { r = "es una letra"; }
+
+En caso contrario, se trata de un símbolo:
+else { r = "es un simbolo"; }
+
+Se muestra el resultado:
+Console.WriteLine(); Console.WriteLine(" Resultado {0}, {1}", c, r).

@@ -1,0 +1,15 @@
+EJEMPLO 2
+
+Primero, se inicializa un array asignando sus valores directamente: char[] a1 = { 'a', 'b', 'c' }. Una forma que podríamos denominar implícita donde el compilador deduce el comando new char[].
+
+Seguidamente, se define un segundo array utilizando la sintaxis explícita con new, si bien con idénticos datos: char[] a2 = new char[] { 'a', 'b', 'c' }.
+
+A continuación, se declara un tercer array, estableciendo previamente su dimensión: char[] a3 = new char[3].
+
+Acto seguido, se poblan de forma manual sus ubicaciones: a3[0] = 'a'; a3[1] = 'b'; a3[2] = 'c'.
+
+Los tres arrays convergen en los mismos elementos a pesar de la divergencia en su creación.
+
+Para revelar su dimensión, se emplea la propiedad: a1.Length a2.Length a3.Length.
+
+Todas las operaciones exhiben la misma magnitud 3.

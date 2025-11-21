@@ -1,0 +1,13 @@
+EJEMPLO 4 
+
+La expresión "Bienvenido " se convierte en un array utilizando: char[] s = "Bienvenido ".ToCharArray().
+
+El usuario escribe su nombre, que a su vez se convierte en un arreglo: n = Console.ReadLine().ToCharArray().
+
+Se almacenan las longitudes originales: lim1 = s.Length y lim2 = n.Length.
+
+El array s se expande para contener el nombre a través de: Array.Resize(ref s, lim2 + lim1). Esto genera un nuevo array interno con la dimensión requerida y actualiza la referencia s.
+
+Los caracteres del nombre son replicados al término de la matriz s, ya modificada: for (int i = 0; i < lim2; i++) { s[lim1 + i] = n[i]; }.
+
+Para exhibirla, la oración completa se itera carácter a carácter: for (int i = 0; i < lim1; i++) { Console.Write("{0}", s[i]); }.

@@ -1,0 +1,16 @@
+EJEMPLO 8
+
+El usuario proporciona una frase que se convierte en un array c = Console.ReadLine().ToCharArray(); (dentro de la función ingreso).
+
+La función invertir permuta los caracteres extremos usando el bucle
+for (int i = 0; i  size  2; i++) { aux = c[i]; c[i] = c[size - i - 1]; c[size - i - 1] = aux; }.
+
+Es importante destacar que esta función altera el array proporcionado inicialmente.
+
+La función imprimir itera sobre el array visualizando cada carácter
+for (int i = 0; i  size; i++) { Console.Write([{0}], c[i]); }, esto ocurre dentro de la propia función imprimir.
+
+Finalmente, en el método Main se ejecuta una secuencia ordenada
+c = ingreso(); (obteniendo el array)
+invertir(c); (modificándolo)
+imprimir(c); (mostrándolo).

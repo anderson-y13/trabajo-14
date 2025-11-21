@@ -1,0 +1,19 @@
+EJEMPLO 7 
+
+Para registrar los datos del array, primero se pide su dimensión: size = int.Parse(Console.ReadLine()) (dentro de la función ingreso).
+
+Inicialmente, el usuario introduce cada valor del array empleando un ciclo for:
+for (int i = 0; i < size; i++) { a[i] = int.Parse(Console.ReadLine()); }, esto se realiza dentro de la función ingreso.
+
+Posteriormente, la inversión del array implica el intercambio de elementos desde los extremos aproximándose al centro:
+for (int i = 0; i < size / 2; i++) { aux = a[i]; a[i] = a[size - i - 1]; a[size - i - 1] = aux; }, esta secuencia está dentro de la función invertir.
+
+Es crucial notar que esta función altera el array original que es transferido como parámetro.
+
+La visualización del array invertido se concreta a través de la función imprimir:
+for (int i = 0; i < size; i++) { Console.Write("[{0}]", a[i]); }.
+
+En el método principal o "Main", se ejecuta la secuencia:
+a = ingreso(); (se obtiene el array)
+invertir(a); (se modifica)
+imprimir(a); (se imprime).

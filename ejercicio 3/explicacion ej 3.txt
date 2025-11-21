@@ -1,0 +1,13 @@
+Ejemplo 3
+
+Este ejemplo transforma una cadena de texto facilitada por el usuario en un array de caracteres para su posterior exhibición.
+
+Inicialmente se declara el array que custodiará los caracteres: char[] c.
+
+Un usuario introduce texto, que luego se transforma en un arreglo de caracteres mediante: c = Console.ReadLine().ToCharArray().
+
+Para calcular la cantidad de caracteres presentes se implementa: c.Length.
+
+Subsiguientemente, el array se itera con un bucle for: for (int i = 0; i < c.Length; i++). Este ciclo se ejecuta desde el índice 0 hasta c.Length - 1.
+
+En cada posición se exhibe el caracter respectivo: Console.Write("[{0}]", c[i]).
